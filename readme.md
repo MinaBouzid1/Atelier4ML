@@ -87,9 +87,12 @@ Un fichier `agent_rewards.png` est automatiquement sauvegardé.
 ## 🚀 Conseils de performance
 
 Pour accélérer l’entraînement :
-
 * Désactiver l’affichage pygame pendant l’entraînement
 * Réduire le nombre d’épisodes (200–500 suffisent pour l’analyse)
+Dans train_agent, modifie cette ligne :
+* render = (episode % render_every == 0) par : 
+* render=false
+
 
 ---
 

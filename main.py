@@ -84,7 +84,7 @@ def train_agent(mode='RL_vs_AI', num_episodes=1000, render_every=100, save_every
         steps = 0
         done = False
 
-        render = (episode % render_every == 0)
+        render = False
 
         while not done:
             # Gestion des événements Pygame
